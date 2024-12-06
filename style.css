@@ -1,0 +1,181 @@
+body {
+  background-color: #68b0ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.birthday-cake {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder {
+  position: absolute;
+  width: 350px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #212F3C;
+  left: -140px;
+  top: 10px;
+}
+
+.holder:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: #CACFD2;
+  left: 130px;
+  top: 20px;
+}
+
+.holder:after {
+  content: "";
+  position: absolute;
+  background-color: #68b0ab;
+  width: 100px;
+  height: 135px;
+  border-radius: 30px 30px 0 0;
+  left: 65px;
+  top: 20px;
+  box-shadow: 125px 0 #68b0ab;
+}
+
+.shadow {
+  position: absolute;
+  width: 350px;
+  height: 20px;
+  border-radius: 50%;
+  top: 170px;
+  left: -135px;
+  background-color: rgba(0, 0, 0, 0.095);
+  z-index: 1;
+}
+
+.shadow:before {
+  content: "";
+  position: absolute;
+  background-color: #CACFD2;
+  width: 150px;
+  height: 20px;
+  border-radius: 20px;
+  top: -10px;
+  left: 96px;
+}
+
+.cake {
+  position: absolute;
+  overflow: hidden;
+  width: 275px;
+  height: 140px;
+  background-color: #FAD7A0;
+  top: -130px;
+  left: -101px;
+  border-radius: 30px 30px 0 0;
+}
+
+.cake:before {
+  content: "";
+  background-color: #935116;
+  width: 275px;
+  height: 15px;
+  position: absolute;
+  top: 75px;
+  box-shadow: 0 30px #935116;
+}
+
+.cake:after {
+  content: "";
+  position: absolute;
+  background-color: #573612;
+  width: 275px;
+  height: 40px;
+  box-shadow: inset 0 10px rgba(0, 0, 0, 0.07);
+}
+
+.chocolate {
+  position: absolute;
+  background-color: #573612;
+  width: 25px;
+  height: 45px;
+  top: 25px;
+  left: 0;
+  z-index: 2;
+  border-radius: 50px;
+  box-shadow: 25px 2px #FAD7A0, 50px -10px #573612, 75px -5px #FAD7A0, 100px 3px #573612, 125px 0 #FAD7A0, 150px -5px #573612, 175px 3px #FAD7A0, 200px -5px #573612, 225px -10px #FAD7A0, 250px 4px #573612;
+}
+
+.candle {
+  position: absolute;
+  width: 15px;
+  height: 70px;
+  background-color: white;
+  top: -200px;
+  left: 30px;
+  box-shadow: inset 0 -10px 0 #E74C3C;
+}
+
+.candle:before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #E74C3C;
+  content: "";
+  top: 10px;
+  box-shadow: 0 25px #E74C3C;
+}
+
+.candle:after {
+  content: "";
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  background-color: black;
+  top: -15px;
+  left: 6px;
+}
+
+.flame {
+  position: absolute;
+  background-color: #F4D03F;
+  opacity: 0.9;
+  box-shadow: inset 0 -5px 5px #D35400, 5px -5px 20px #FBFFA3;
+  width: 20px;
+  height: 30px;
+  top: -240px;
+  border-radius: 50%;
+  left: 26.5px;
+  animation: flame 0.5s infinite;
+}
+
+@keyframes flame {
+  from, to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+#birthday-message {
+  position: absolute;
+  top: 10%; /* Ajusta la posición según tus necesidades */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3em; /* Ajusta el tamaño de la fuente si es necesario */
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Opcional, para dar efecto de sombra */
+} 
