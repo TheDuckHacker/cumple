@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const averageVolume = dataArray.reduce((sum, value) => sum + value, 0) / dataArray.length;
 
           // Detecta un volumen alto como indicativo de soplido
-          if (averageVolume > 100) {
+          if (averageVolume > 80) {
             opacity -= 0.05;
             if (opacity < 0) opacity = 0;
             flame.style.opacity = opacity;
