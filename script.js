@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function showConfetti() {
     confetti({
-      particleCount: 100,
+      particleCount: 80,
       spread: 70,
       origin: { y: 0.6 },
       colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'],
