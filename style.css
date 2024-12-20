@@ -179,3 +179,15 @@ body {
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Opcional, para dar efecto de sombra */
 } 
+/* Media Queries para hacerlo responsive */
+@media screen and (max-width: 768px) {
+  .birthday-cake {
+    transform: scale(0.8); /* Escalar la imagen en pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .birthday-cake {
+    transform: scale(0.6); /* Escalar aún más en pantallas muy pequeñas */
+  }
+}
